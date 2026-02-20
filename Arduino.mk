@@ -1260,7 +1260,7 @@ else
 endif
 
 LDFLAGS       += -$(MCU_FLAG_NAME)=$(MCU) -Wl,--gc-sections -O$(OPTIMIZATION_LEVEL)
-SIZEFLAGS     ?= --mcu=$(MCU) -C
+SIZEFLAGS     ?= --mcu=$(MCU) --format=avr
 
 # for backwards compatibility, grab ARDUINO_PORT if the user has it set
 # instead of MONITOR_PORT
